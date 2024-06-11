@@ -39,6 +39,7 @@ const NavBar = () => {
       .then((response) => {
         if (response.url) {
           window.location.assign(response.url);
+          localStorage.removeItem('cartFoods')
         }
       });
   };
