@@ -30,8 +30,8 @@ console.log(req.body);
     const session = await stripe.checkout.sessions.create({
         line_items:lineItems,
         mode:'payment',
-        success_url:"https://main--food-app-order.netlify.app/success",
-        cancel_url:"https://main--food-app-order.netlify.app/cancel"
+        success_url:"https://food-app-order.netlify.app/success",
+        cancel_url:"https://food-app-order.netlify.app/cancel"
     })
 
     res.send(JSON.stringify({
