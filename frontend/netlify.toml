@@ -1,2 +1,3 @@
 [build]	
     build = "build"
+[[redirects]]   from = "/*"   to = "/index.html"   status = 200
