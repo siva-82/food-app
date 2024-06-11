@@ -26,7 +26,7 @@ const NavBar = () => {
   const checkout = async () => {
     console.log("checkout")
 
-    await fetch("http://localhost:4000/checkout", {
+    await fetch(`process.env.REACT_APP_BACKEND_URL/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
