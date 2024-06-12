@@ -17,12 +17,12 @@ function NextArrow(props) {
   return (
     
       <div
-        className={`arrows ${className} slick-r-ss`}
+        
         style={{ display: "flex" }}
         onClick={onClick}
       >
         <IoIosArrowDroprightCircle
-          className="arrows slick-r-ss"
+          className={`arrows ${className} slick-r-ss`}
           style={{ color: "#F17228" }}
         />
       </div>
@@ -35,12 +35,12 @@ function PrevArrow(props) {
   return (
   
       <div
-        className={`arrows ${className} slick-l-ss`}
+     
         style={{}}
         onClick={onClick}
       >
         <IoIosArrowDropleftCircle
-          className="arrows slick-l-ss" 
+          className={`arrows ${className} slick-l-ss`}
           style={{ color: "#F17228" }}
         />
       </div>
@@ -49,7 +49,6 @@ function PrevArrow(props) {
 }
 
 const SearchSection = ({ data }) => {
-  console.log("SearchSection", data);
   const settings = {
     dots: true,
     speed: 500,
@@ -96,7 +95,7 @@ const SearchSection = ({ data }) => {
         style={{ height: "300px", background: "#FEFAF1" }}
       >
         <div className="container my-4 d-flex justify-content-between">
-          <div>SearchSection</div>
+          <h6>Search By Food</h6>
           <div className="d-flex  mx-4">
             <Link
               to="/food"
@@ -122,7 +121,7 @@ const SearchSection = ({ data }) => {
                   {/* <img src="/hubble.jpg" alt="hubble" style={{borderRadius:"50px",height:"100px",width:"100px", margin:"10px"}} /> */}
                   <img
                     src={meal?.foodImage}
-                    alt="hubble"
+                    
                     style={{
                       borderRadius: "50px",
                       height: "100px",

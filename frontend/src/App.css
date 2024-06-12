@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 } */
+.gradient  {
+  
+  background: linear-gradient(to right,#F65900,#F17228 ,#FFB800,#FFB800);
+  background-clip: text;
+  color: transparent;
+}
+.inputRange {
+  
+  accent-color: hsl(22, 100%, 48%);
+ 
+  height: 8px;
+ 
+  border-color: #F65900;
+}
+
+.inputRange::-webkit-slider-thumb {
+  
+  border-radius: 10px;
+  
+  background-color: #F65900;
+  overflow: visible;
+  cursor: pointer;
+}

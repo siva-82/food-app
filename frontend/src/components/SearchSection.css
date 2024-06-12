@@ -12,13 +12,13 @@
 .slick-r-ss{
    /* background-color:  green ; */
     position: absolute;
-    top:-18%;
+    top:-22%;
     right:0
 }
 .slick-l-ss{
     position: absolute;
-        top:-18%;
-        left:90%
+        top:-22%;
+        left:93%
 }
 .arrows{
     /* /* position: relative; */
@@ -72,13 +72,13 @@ opacity: 0.8;
     .slick-r-ss{
         /* background-color:  green ; */
          position: absolute;
-         top:-18%;
+         top:-22%;
          right:0
      }
      .slick-l-ss{
          position: absolute;
-             top:-18%;
-             left:70%
+             top:-22%;
+             left:78%
      }
 }
 @media (min-width:481px) and (max-width:768px){
@@ -89,13 +89,13 @@ opacity: 0.8;
 .slick-r-ss{
     /* background-color:  green ; */
      position: absolute;
-     top:-18%;
+     top:-22%;
      right:0
  }
  .slick-l-ss{
      position: absolute;
-         top:-18%;
-         left:85%
+         top:-22%;
+         left:88%
  }
 }
 @media (min-width:769px) and (max-width:1024px){
@@ -106,13 +106,13 @@ opacity: 0.8;
     .slick-r-ss{
         /* background-color:  green ; */
          position: absolute;
-         top:-18%;
+         top:-22%;
          right:0
      }
      .slick-l-ss{
          position: absolute;
-             top:-18%;
-             left:85%
+             top:-22%;
+             left:91%
      }
 }
 

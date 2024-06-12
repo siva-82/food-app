@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import "../App.css";
 const InstallAppSection = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const InstallAppSection = () => {
                   alt="icon"
                   style={{ margin: "10px", width: "110px", height: "50px;" }}
                 />
-                <div className="d-flex mx-3 flex-column">
+                <div className="gradient d-flex mx-3 flex-column">
                   <h2>Daily</h2>
                   <h2>Discount</h2>
                 </div>
@@ -37,9 +38,9 @@ const InstallAppSection = () => {
                   alt="icon"
                   style={{ margin: "10px", width: "110px", height: "50px;" }}
                 />
-                <div className="d-flex mx-3 flex-column ">
-                  <h2>Live</h2>
-                  <h2>Tracing</h2>
+                <div className="gradient d-flex mx-3 flex-column ">
+                  <h2 className="gradient">Live</h2>
+                  <h2 className="gradient">Tracing</h2>
                 </div>
               </div>
               <div className="divider"
@@ -58,7 +59,7 @@ const InstallAppSection = () => {
                   alt="icon"
                   style={{ margin: "10px", width: "110px", height: "50px;" }}
                 />
-                <div className="d-flex mx-3 flex-column">                 
+                <div className="gradient d-flex mx-3 flex-column">                 
                   <h2>Quick</h2>
                   <h2>Delivery</h2>
                 </div>
@@ -78,7 +79,7 @@ const InstallAppSection = () => {
             <div className="installSection__second d-flex my-5  justify-content-start align-self-center ">
               <div className=" mx-4 ">
                 {/* <div> */}
-                  <h1 style={{fontSize:'50px',fontWeight:'700'}}>Install the App</h1>
+                  <h1 className='gradient'style={{fontSize:'50px',fontWeight:'700'}}>Install the App</h1>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                     distinctio tenetur non provident itaque laudantium!

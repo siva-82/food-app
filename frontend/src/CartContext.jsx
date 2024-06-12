@@ -17,15 +17,13 @@ function getInitialState() {
 export function CartProvider({ children }) {
   const [cartFoods, setCartFoods] = useState(getInitialState);
 
+
   useEffect(() => {
     localStorage.setItem('cartFoods', JSON.stringify(cartFoods))
   }, [cartFoods])
 
 
   function getFoodQuantity(id) {
-    console.log("getFoodQuantity",id)
-    console.log("getFoodQuantity cartFoods",cartFoods)
-
     const quantity = cartFoods.find(
       (food) => food.id === id
     )?.quantity;
@@ -38,7 +36,7 @@ export function CartProvider({ children }) {
   }
 
   function addOneToCart(id){
-    console.log("addOneToCart",id)
+
     const quantity=getFoodQuantity(id);
 
     if(quantity === 0){
@@ -82,7 +80,6 @@ export function CartProvider({ children }) {
     let totalCost=0;
     cartFoods.map((cartItem)=>{
         const foodData =getFoodData(cartItem.id);
-        console.log("foodData getTotalCost",foodData)
         totalCost += (foodData.price * cartItem.quantity)
     }) 
     return totalCost

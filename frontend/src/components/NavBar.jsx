@@ -46,8 +46,7 @@ const NavBar = () => {
     (sum, product) => sum + product.quantity,
     0
   );
-  console.log("navbarrrrrrr",productsCount)
-console.log('productsCount',productsCount)
+  
   return <>   <Navbar expand="lg" className="fixed-top  bg-body-tertiary">
   <Container>
     <LinkContainer to='/'> 
@@ -57,18 +56,8 @@ console.log('productsCount',productsCount)
     <Navbar.Collapse className="justify-content-end flex-grow-1"id="basic-navbar-nav ">
       <Nav className="me-auto">
         <LinkContainer to='/'><Nav.Link >Home</Nav.Link></LinkContainer>
-        <LinkContainer to='/Food'><Nav.Link >Food</Nav.Link></LinkContainer>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item >Action</NavDropdown.Item>
-          <NavDropdown.Item >
-            Another action
-          </NavDropdown.Item>
-          <NavDropdown.Item >Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item >
-            Separated link
-          </NavDropdown.Item>
-        </NavDropdown>
+        <LinkContainer to='/Food'><Nav.Link >Menu</Nav.Link></LinkContainer>
+        
       </Nav>
     </Navbar.Collapse>
     <Nav>
