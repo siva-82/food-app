@@ -42,7 +42,7 @@
 } */
 .gradient  {
   
-  background: linear-gradient(to right,#F65900,#F17228 ,#FFB800,#FFB800);
+  background: linear-gradient(90deg ,#f17228,#ffb800);
   background-clip: text;
   color: transparent;
 }
