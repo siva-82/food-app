@@ -62,7 +62,7 @@ function Store() {
             </select>
 
             <label for="customRange2" className="me-2 ">
-              Price{" "}
+              Price
             </label>
             <input
               type="range"
@@ -74,7 +74,7 @@ function Store() {
               onClick={priceRange}
             />
             <label for="customRange2" className="me-2 ">
-              {rangeVal}{" "}
+             Rs.{rangeVal}
             </label>
 
             <label className="mx-2" for="idSort">
