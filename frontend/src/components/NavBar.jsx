@@ -26,7 +26,7 @@ const NavBar = () => {
   const checkout = async () => {
     console.log("checkout")
 
-    await fetch("http://localhost:4000/checkout", {
+    await fetch(`https://food-app-37dd.onrender.com/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,6 +39,7 @@ const NavBar = () => {
       .then((response) => {
         if (response.url) {
           window.location.assign(response.url);
+          localStorage.removeItem('cartFoods')
         }
       });
   };
