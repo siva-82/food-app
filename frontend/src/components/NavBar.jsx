@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import React, { useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { LinkContainer } from "react-router-bootstrap";
-import { Badge, Modal } from "react-bootstrap";
+import { Badge, Modal, Spinner } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import CartProduct from "../pages/CartProduct";
 
@@ -99,7 +99,7 @@ setCheckOutLoading(true)
               <h1>Total Rs: {cart.getTotalCost().toFixed(2)}</h1>
               
               <Button variant="success" onClick={checkout}>
-                Purchase items!
+                Purchase items! {checkoutLoading&& <Spinner className='spinner-border'/>}
               </Button>
             </>
           ) : (
