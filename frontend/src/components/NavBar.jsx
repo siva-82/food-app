@@ -99,7 +99,7 @@ setCheckOutLoading(true)
               <h1>Total Rs: {cart.getTotalCost().toFixed(2)}</h1>
               
               <Button variant="success" onClick={checkout}>
-                {checkoutLoading? (<Spinner  className="ms-3 h-1 spinner-border text-light"
+                {checkoutLoading? (<Spinner  className="mx-3 h-1 spinner-border text-light"
                   style={{ height: "20px", width: "20px" }}/>):"Purchase Items!"}
               </Button>
             </>
