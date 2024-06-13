@@ -27,7 +27,7 @@ const NavBar = () => {
   const checkout = async () => {
     console.log("checkout")
 setCheckOutLoading(true)
-    await fetch(`https://food-app-37dd.onrender.com/checkout`, {
+    await fetch(`${import.meta.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
