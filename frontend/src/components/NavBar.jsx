@@ -23,10 +23,11 @@ const NavBar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [checkoutLoading,setCheckOutLoading]=useState(false)
   const checkout = async () => {
     console.log("checkout")
-
-    await fetch(`https://food-app-37dd.onrender.com/checkout`, {
+setCheckOutLoading(true)
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,6 +35,7 @@ const NavBar = () => {
       body: JSON.stringify({ items: cart.items }),
     })
       .then((response) => {
+        setCheckOutLoading(false)
         return response.json();
       })
       .then((response) => {
