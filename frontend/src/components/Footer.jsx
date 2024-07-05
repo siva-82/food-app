@@ -49,7 +49,7 @@ const Footer = () => {
     <div className='mt-5 footer__subscription' style={{opacity:'0.5'}}>Social Icons</div>
     <div className='mt-5 footer__subscription'>Receive Exclusive Offers in your mailbox</div>
     <div className='my-5 footer__subscription d-flex footer__form'>
-      <input placeholder='Enter Your Email' style={{borderRadius:"5px",width: "-webkit-fill-available",height:"50px" }} type="text" />
+      <input placeholder='Enter Your Email' style={{borderRadius:"5px", width: "100%", height:"50px" }} type="text" />
     <button className='btn btn-primary shadow ' style={{backgroundColor: "rgb(241, 114, 40)", borderColor: "rgb(241, 114, 40)",borderRadius:"5px",width: '50%',marginLeft:" 10px"}}>Subscribe</button></div>
     </div>
     </div>
