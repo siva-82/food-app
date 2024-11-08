@@ -19,7 +19,7 @@ const FoodCard = ({ foodData }) => {
         <Card.Text className="text-muted ">Rs {foodData.price}</Card.Text>
         {foodQuantity > 0 ? (
           <>
-            <Form as={Row}>
+            <Form className="my-2"as={Row}>
               <Form.Label column="true" sm="4">
                 In Cart:{foodQuantity}
               </Form.Label>
@@ -63,7 +63,7 @@ const FoodCard = ({ foodData }) => {
         ) : (
           <Button
             variant="primary"
-            className="proceed__button"
+            className="proceed__button my-2"
             style={{
               marginBottom: "5px",
               color: "#fff",

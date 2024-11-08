@@ -60,7 +60,7 @@ const Footer = () => {
 <div className='my-2 col-lg-4 col-sm-5 d-flex  '><div>All rights Reserved </div>
 <div className='mx-2'> &copy;</div>
 <div > Company, 2024</div></div>
-<div  className='my-2'><span  className='my-2 ' style={{opacity:'0.5'}}> Made with love by</span>  TeamSpiritz</div>
+<div  className='my-2'><span  className='my-2 ' style={{opacity:'0.5'}}> Made by</span> Siva Ragupathy</div>
    </div>
     </div>
 </>
