@@ -1,7 +1,9 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
+import { useNavigate } from 'react-router-dom'
 
 const BottomSection = () => {
+  const navigate=useNavigate()
   return (
     
 <div className='container-fluid bottomSection  d-flex flex-column justify-content-center align-items-center' style={{height:'300px',backgroundImage:'url(\'/bottomSection.png\')',backgroundRepeat:'round' }}>
